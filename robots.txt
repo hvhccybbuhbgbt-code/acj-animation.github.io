@@ -1,1 +1,3 @@
-
+User-agent: *
+Allow: /
+Sitemap: https://acj-animation.github.io/sitemap.xml
