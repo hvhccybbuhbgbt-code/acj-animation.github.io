@@ -5,344 +5,113 @@
   <title>ACJ Animation – Devotional Music & Animation</title>
   <meta name="description" content="ACJ Animation: Devotional music, Krishna Janmashtami specials, and animated bhajans. Listen to Teri Maya ka Na Paaya koi Paar (New Version) and explore our divine content.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="https://acj-animation.github.io/">
-  <meta name="google-site-verification" content="HwCheERW_5yn6HNpksX1UMKWMITLxJNL0XWSi2ixbDk" />
+
+  <!-- Canonical must point to the live project-site URL (user domain + repo path) -->
+  <link rel="canonical" href="https://hvhccybbuhbgbt-code.github.io/acj-animation.github.io/">
+
+  <!-- Optional: keep your Search Console verification -->
+  <meta name="google-site-verification" content="HwCheERW_5yn6HNpksX1UMKWMITLxJNL0XWSi2ixbDk">
+
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111}
-    header,footer{padding:16px 20px;background:#0b1220;color:#fff}
-    nav a{color:#fff;margin-right:16px;text-decoration:none}
-    .hero{padding:48px 20px;background:#f5f7ff}
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111;background:#f7f8ff}
+    header, footer{padding:16px 20px;background:#0b1220;color:#fff}
     .wrap{max-width:980px;margin:auto}
+    nav a{color:#fff;margin-right:16px;text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    .hero{padding:48px 20px;background:#eef2ff}
     .grid{display:grid;grid-template-columns:1fr;gap:18px}
     @media(min-width:800px){.grid{grid-template-columns:1.5fr 1fr}}
-    .card{border:1px solid #e6e8f0;border-radius:10px;padding:16px;background:#fff}
-    .btn{display:inline-block;background:#2b59ff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+    .card{border:1px solid #e6e8f0;border-radius:12px;padding:16px;background:#fff}
+    .btn{display:inline-block;background:#2b59ff;color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+    .btn:hover{opacity:.95}
     .muted{color:#555}
+    .vid{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000}
+    .vid>iframe{position:absolute;inset:0;width:100%;height:100%}
   </style>
 </head>
 <body>
-<header class="wrap">
-  <div class="card"> <p><a href="/acj-animation.github.io/bhajans.html#om-namo-bhagavate-vasudevaya">Om Namo Bhagavate Vasudevaya (Hindi) – New Version</a> - Aug 2025</p> </div>
-  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-    <div><strong>ACJ Animation</strong></div>
-    <nav> <a href="/acj-animation.github.io/">Home</a> <a href="/acj-animation.github.io/bhajans.html">Bhajans</a> <a href="/acj-animation.github.io/about.html">About</a> <a href="/acj-animation.github.io/contact.html">Contact</a> </nav>
-    </nav>
+
+<!-- Header -->
+<header>
+  <div class="wrap">
+    <div class="card" style="margin-bottom:12px">
+      <!-- Project-safe link to Bhajans page and anchor -->
+      <p><a href="./bhajans.html#om-namo-bhagavate-vasudevaya">Om Namo Bhagavate Vasudevaya (Hindi) – New Version</a> — Aug 2025</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div><strong>ACJ Animation</strong></div>
+      <!-- All links are relative so they work under the /acj-animation.github.io/ subpath -->
+      <nav>
+        <a href="./">Home</a>
+        <a href="./bhajans.html">Bhajans</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
   </div>
 </header>
 
+<!-- Main -->
 <main class="wrap">
+
+  <!-- Hero -->
   <section class="hero">
     <div class="grid">
       <div>
         <h1>Divine Music • Krishna Animation • Bhakti</h1>
         <p class="muted">Celebrate Krishna Janmashtami and explore soulful devotional music with ACJ Animation. Animated bhajans, lyrics, and spiritual stories—crafted with love.</p>
-        <p><a class="btn" href="/bhajans.html">Listen to Bhajans</a></p>
+        <!-- Button to the dedicated Bhajans page (project-safe) -->
+        <p><a class="btn" href="./bhajans.html">Listen to Bhajans</a></p>
       </div>
-      <div class="card"> <p><a href="/acj-animation.github.io/bhajans.html#om-namo-bhagavate-vasudevaya">Om Namo Bhagavate Vasudevaya (Hindi) – New Version</a> - Aug 2025</p> </div>
+
+      <!-- Announcement card -->
       <div class="card">
+        <p><a href="./bhajans.html#om-namo-bhagavate-vasudevaya">Om Namo Bhagavate Vasudevaya (Hindi) – New Version</a> — Aug 2025</p>
+      </div>
+
+      <!-- Featured block -->
+      <div class="card" style="grid-column:1/-1">
         <h3>Featured: Krishna Janmashtami Special</h3>
         <p><strong>Teri Maya ka Na Paaya koi Paar (New Version)</strong></p>
-        <div style="position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden">
-          <iframe src="https://www.youtube.com/embed/3qAAI-545rQ" title="Teri Maya ka Na Paaya koi Paar (New Version) | ACJ Animation" frameborder="0" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+        <div class="vid">
+          <!-- Privacy-enhanced, lazy, and modest branding embed -->
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/3qAAI-545rQ?rel=0&modestbranding=1"
+            title="Teri Maya ka Na Paaya koi Paar (New Version) | ACJ Animation"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
         <p class="muted">Janmashtami 2025 • Krishna Leela • Animated Bhajan</p>
-        <p><a class="btn" href="/bhajans.html">Open Bhajan Page</a></p>
+        <p><a class="btn" href="./bhajans.html">Open Bhajan Page</a></p>
       </div>
     </div>
   </section>
 
-  <section style="padding:28px 0">
+  <!-- Latest Releases -->
+  <section style="padding:28px 20px">
     <h2>Latest Releases</h2>
     <div class="card">
-      <p><a href="/bhajans.html#teri-maya">Teri Maya ka Na Paaya koi Paar (New Version)</a> • Krishna Janmashtami Special</p>
+      <p><a href="./bhajans.html#teri-maya">Teri Maya ka Na Paaya koi Paar (New Version)</a> • Krishna Janmashtami Special</p>
     </div>
   </section>
+
 </main>
 
+<!-- Footer -->
 <footer>
   <div class="wrap">
-    <small>© ACJ Animation • Devotional Music & Animation • Contact: contactmusicseries@gmail.com</small>
+    <small>© <span id="year"></span> ACJ Animation • Devotional Music & Animation • Contact: <a href="mailto:contactmusicseries@gmail.com" style="color:#fff">contactmusicseries@gmail.com</a></small>
   </div>
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
-</html>
-<!doctype html>
-<html lang="hi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ACJ Animation Divine | भक्ति गीत और कहानियाँ</title>
-  <meta name="description" content="ACJ Animation Divine — शक्तिशाली स्तोत्र, भजन और आध्यात्मिक कहानियाँ. पाँच प्रीमियम वीडियो कार्ड्स, प्रो लेआउट और तेज़, मोबाइल‑फर्स्ट अनुभव." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            saffron: {50:'#FFF7E6',100:'#FFE9C2',200:'#FFD38A',300:'#FFB64D',400:'#FF9A1A',500:'#F08C00',600:'#C87400',700:'#9F5D00',800:'#764600',900:'#4E3000'},
-            maroon: {50:'#F8ECEE',100:'#F0D0D6',200:'#E1A5AE',300:'#D17987',400:'#C14E5F',500:'#A62E43',600:'#872537',700:'#681C2B',800:'#49131F',900:'#2C0A13'},
-            cream:  {50:'#FFFFFF',100:'#FCFAF6',200:'#F7F1E6',300:'#EFE3CE',400:'#E2CEAE',500:'#D6BA90',600:'#BCA27B',700:'#9F8968',800:'#816F55',900:'#685A46'},
-            teal:   {50:'#E7F8F6',100:'#C2F0EA',200:'#92E5DC',300:'#61D9CD',400:'#2FCCBA',500:'#12B7A6',600:'#0F9487',700:'#0C746B',800:'#09554E',900:'#063A35'}
-          },
-          fontFamily: {
-            display: ['Marhey','system-ui','sans-serif'],
-            sans: ['Inter','system-ui','sans-serif']
-          },
-          boxShadow: {
-            pro: '0 10px 30px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.06)'
-          },
-          borderRadius: { xl: '1rem', '2xl': '1.25rem' }
-        }
-      }
-    }
-  </script>
-  <style>
-    .pro-container { max-width: 1200px; }
-  </style>
-</head>
-<body class="bg-cream-100 text-gray-800 antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-cream-300">
-    <nav class="pro-container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="h-16 flex items-center justify-between">
-        <a href="#" class="flex items-center gap-3">
-          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-saffron-500 text-white font-bold">ॐ</span>
-          <span class="font-display text-xl font-semibold">ACJ Animation Divine</span>
-        </a>
-        <div class="hidden md:flex items-center gap-6">
-          <a class="hover:text-saffron-600" href="#videos">Videos</a>
-          <a class="hover:text-saffron-600" href="#stories">Stories</a>
-          <a class="hover:text-saffron-600" href="#about">About</a>
-          <a class="inline-flex items-center px-4 py-2 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600" href="https://www.youtube.com/@">Subscribe</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-cream-50 to-cream-200"></div>
-      <div class="relative pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 grid lg:grid-cols-12 gap-10 items-center">
-        <div class="lg:col-span-6">
-          <h1 class="font-display text-4xl md:text-5xl font-bold leading-tight">भक्ति की प्रो प्रस्तुति — शक्तिशाली स्तोत्र और आत्मिक भजन</h1>
-          <p class="mt-4 text-gray-700">सुंदर, तेज़ और मोबाइल‑फर्स्ट वेबसाइट अनुभव के साथ पाँच चयनित वीडियो और उनसे प्रेरित दिव्य कहानियाँ.</p>
-          <div class="mt-6 flex gap-3">
-            <a href="#videos" class="inline-flex items-center px-5 py-3 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600">Watch Videos</a>
-            <a href="#stories" class="inline-flex items-center px-5 py-3 rounded-lg border border-cream-400 hover:bg-cream-200">Read Stories</a>
-          </div>
-        </div>
-        <div class="lg:col-span-6">
-          <div class="aspect-video rounded-2xl overflow-hidden shadow-pro bg-black">
-            <!-- Feature the first video -->
-            <iframe class="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/MqAsUPFbr8Y?rel=0&modestbranding=1"
-              title="आकाशे च पृथिव्याम् | Powerful Shiva Stotra | ACJ Animation"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
-          </div>
-          <p class="mt-2 text-sm text-gray-600">नियमित रूप से नवीनतम भजन को यहाँ फीचर करें ताकि दर्शक तुरंत सुन सकें.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Videos Grid -->
-    <section id="videos" class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-end justify-between mb-6">
-        <h2 class="font-display text-3xl font-semibold">Featured Videos</h2>
-        <a href="https://www.youtube.com/@" class="text-teal-700 hover:underline">View Channel</a>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- 1 -->
-        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
-          <div class="aspect-video bg-black">
-            <iframe class="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/MqAsUPFbr8Y?rel=0&modestbranding=1"
-              title="आकाशे च पृथिव्याम् | Powerful Shiva Stotra | ACJ Animation"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">आकाशे च पृथिव्याम् — शक्तिशाली शिव स्तोत्र</h3>
-            <p class="mt-1 text-sm text-gray-600">सर्वत्र स्थित शिवतत्त्व का अनुभव कराती धैर्य‑दायक वाणी और दिव्य एनीमेशन.</p>
-            <div class="mt-3 flex items-center gap-2 text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Shiva</span>
-              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Sanskrit</span>
-              <span class="text-gray-500">2:17</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 2 -->
-        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
-          <div class="aspect-video bg-black">
-            <iframe class="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/lE-2WyDGcS8?rel=0&modestbranding=1"
-              title="Teri Ye Maya | Full Song New Version | ACJ Animation"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">तेरी ये माया — New Version</h3>
-            <p class="mt-1 text-sm text-gray-600">माया की चुनौती, भक्ति की शरण और अंततः करुणा का साक्षात्कार — आत्मा को छू लेने वाला सफ़र.</p>
-            <div class="mt-3 flex items-center gap-2 text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Bhakti</span>
-              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
-              <span class="text-gray-500">1:24</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 3 -->
-        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
-          <div class="aspect-video bg-black">
-            <iframe class="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/V83r17G9zNg?rel=0&modestbranding=1"
-              title="Ram Teri Rahon Mein | Shri Ram Bhajan | ACJ Animation"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">राम तेरी राहों में — Shri Ram Bhajan</h3>
-            <p class="mt-1 text-sm text-gray-600">मर्यादा पुरुषोत्तम की छाया में चलने का संकल्प, हर श्वास में राम‑नाम की अनुभूति.</p>
-            <div class="mt-3 flex items-center gap-2 text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Ram</span>
-              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
-              <span class="text-gray-500">3:07</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 4 -->
-        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
-          <div class="aspect-video bg-black">
-            <iframe class="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/BnvH9oqqf70?rel=0&modestbranding=1"
-              title="Syam Sunder Full Song | ACJ Animation"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">श्याम सुंदर — कृष्ण बांसुरी</h3>
-            <p class="mt-1 text-sm text-gray-600">राधा‑कृष्ण के प्रेम, बाँसुरी और रसिक भावों का मधुर, मन को रँग देने वाला गान.</p>
-            <div class="mt-3 flex items-center gap-2 text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Krishna</span>
-              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
-              <span class="text-gray-500">3:59</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 5 -->
-        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
-          <div class="aspect-video bg-black">
-            <iframe class="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/MyzebeAnqU0?rel=0&modestbranding=1"
-              title="Hari Anant | Devotional Song | ACJ Animation"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">हरि अनंत — श्री विष्णु स्तुति</h3>
-            <p class="mt-1 text-sm text-gray-600">अनंत हरि‑महिमा का गान — ध्यान, कीर्तन और अन्तर्मन की शांति के लिए उपयुक्त.</p>
-            <div class="mt-3 flex items-center gap-2 text-xs">
-              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Vishnu</span>
-              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
-              <span class="text-gray-500">2:02</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Devotional Stories -->
-    <section id="stories" class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h2 class="font-display text-3xl font-semibold mb-6">भक्ति कथाएँ (गीतों से प्रेरित)</h2>
-      <div class="space-y-6">
-        <!-- Story 1 -->
-        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
-          <h3 class="text-xl font-semibold">आकाश और पृथ्वी के पार — शिव तत्त्व का आलोक</h3>
-          <p class="mt-2 text-gray-700">एक साधक शून्य रात के आकाश तले बैठा था। जप के बीच उसे लगा मानो चारों दिशाओं में वही चेतना धड़क रही है — वायु की हल्की सिहरन से लेकर दूर कहीं जलती दीपशिखा तक, सबमें शिव का ही स्पंदन है। उस क्षण मस्तिष्क शांत और हृदय निडर हो उठा; आकाशे च पृथिव्याम् का अर्थ अनुभूति बन गया।</p>
-        </article>
-        <!-- Story 2 -->
-        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
-          <h3 class="text-xl font-semibold">माया की भूलभुलैया और एक दीपक</h3>
-          <p class="mt-2 text-gray-700">एक युवक रोज़ संघर्ष में उलझा रहता था — क्रोध, आसक्ति, तुलना। एक वृद्ध साधु ने कहा, “अंधियारे में भी एक दीपक चालू करो।” युवक ने नाम‑स्मरण अपनाया; धीरे‑धीरे माया की दीवारें पारदर्शी होने लगीं। पता चला कि राह कठिन थी, पर प्रकाश भीतर से उठ रहा था।</p>
-        </article>
-        <!-- Story 3 -->
-        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
-          <h3 class="text-xl font-semibold">अयोध्या की गलियों में</h3>
-          <p class="mt-2 text-gray-700">रामनवमी की पूर्व संध्या, एक यात्री गुमसुम गलियों में भटक रहा था। मंदिर से आती आरती की ध्वनि ने उसे रोका। उसने प्रणाम करके कहा, “प्रभु, अब राह तुम्हारी है।” उसी रात उसे सपने में एक तीर दिखाई दिया जो लक्ष्यभेदी था — दिशा मिल गई, यात्रा सार्थक हो उठी।</p>
-        </article>
-        <!-- Story 4 -->
-        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
-          <h3 class="text-xl font-semibold">यमुना तट की सरगम</h3>
-          <p class="mt-2 text-gray-700">यमुना के किनारे सांझ ढली। बाँसुरी की स्वर‑लहरियाँ जैसे मन को रंगकर ले गईं। राधा‑कृष्ण का खेल, चाँदनी की फुहार, और हृदय में उठती बालसुलभ हँसी — यही था श्याम सुंदर का वरद‑हास, जो हर उदासी को प्रेम के रंग में रंग देता है।</p>
-        </article>
-        <!-- Story 5 -->
-        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
-          <h3 class="text-xl font-semibold">हरि अनंत, कथा अनंता</h3>
-          <p class="mt-2 text-gray-700">एक वृद्ध वैष्णव हर सुबह तुलसी के पास बैठकर जप करता। उसने कहा, “कथा ख़त्म नहीं होती, क्योंकि करुणा की धारा अनंत है।” उसी क्षण शिष्य ने समझा कि भक्ति कोई घटना नहीं, प्रवाह है — जैसे जल, जो हर प्यास में नया स्वाद देता है।</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- About / CTA -->
-    <section id="about" class="bg-cream-200">
-      <div class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <h2 class="font-display text-3xl font-semibold">About ACJ Animation Divine</h2>
-        <p class="mt-2 text-gray-700">एनिमेशन, संगीत और शास्त्रीय भावों के संगम से निर्मित आध्यात्मिक अनुभव. हर सप्ताह नई प्रस्तुति, नए भाव.</p>
-        <a href="mailto:contactmusicseries@gmail.com" class="mt-6 inline-flex items-center px-5 py-3 rounded-lg bg-teal-600 text-white hover:bg-teal-700">Collaborate / Contact</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-cream-300">
-    <div class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <h3 class="font-semibold">ACJ Animation Divine</h3>
-        <p class="mt-2 text-sm text-gray-600">Devotional music, animations, and soulful stories.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold">Quick Links</h3>
-        <ul class="mt-2 space-y-2 text-sm">
-          <li><a href="#videos" class="hover:underline">Videos</a></li>
-          <li><a href="#stories" class="hover:underline">Stories</a></li>
-          <li><a href="#about" class="hover:underline">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-semibold">Social</h3>
-        <ul class="mt-2 space-y-2 text-sm">
-          <li><a class="hover:underline" href="https://youtube.com/">YouTube</a></li>
-          <li><a class="hover:underline" href="#">Instagram</a></li>
-          <li><a class="hover:underline" href="#">Twitter/X</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-semibold">Newsletter</h3>
-        <form class="mt-2 flex gap-2">
-          <input type="email" required placeholder="Email address"
-                 class="w-full px-4 py-2 rounded-lg border border-cream-400 focus:outline-none focus:ring-2 focus:ring-teal-500" />
-          <button class="px-4 py-2 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600" type="submit">Join</button>
-        </form>
-      </div>
-    </div>
-    <div class="text-center text-xs text-gray-500 pb-6">© <span id="year"></span> ACJ Animation • All rights reserved</div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+        </html>
+  
