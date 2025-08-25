@@ -71,236 +71,271 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bhakti Vritant | ACJ Animation</title>
-  <meta name="description" content="भक्ति गीत, कहानियां, और आयोजनों के लिए एक सरल और सुंदर वेबसाइट थीम।" />
+  <title>ACJ Animation Divine | भक्ति गीत और कहानियाँ</title>
+  <meta name="description" content="ACJ Animation Divine — शक्तिशाली स्तोत्र, भजन और आध्यात्मिक कहानियाँ. पाँच प्रीमियम वीडियो कार्ड्स, प्रो लेआउट और तेज़, मोबाइल‑फर्स्ट अनुभव." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            saffron: {50:'#FFF7E6',100:'#FFE7BF',200:'#FFD28C',300:'#FFB84D',400:'#FF9E1A',500:'#F08C00',600:'#C97400',700:'#A15D00',800:'#7A4600',900:'#523000'},
-            maroon: {50:'#F9EDEE',100:'#F1D1D5',200:'#E2A5AD',300:'#D27986',400:'#C24D5E',500:'#A82E44',600:'#892538',700:'#6A1C2C',800:'#4B1320',900:'#2D0913'},
-            cream:  {50:'#FFFFFF',100:'#FCFAF6',200:'#F8F3EA',300:'#F2E8D6',400:'#E8D8BB',500:'#DCC6A0',600:'#C3AA84',700:'#A88F6D',800:'#8D7558',900:'#735E47'},
-            teal:   {50:'#E6F7F5',100:'#C0EFEB',200:'#8FE4DD',300:'#5ED8CE',400:'#2DCBBB',500:'#11B7A6',600:'#0E9488',700:'#0C746B',800:'#09564F',900:'#063B36'}
+            saffron: {50:'#FFF7E6',100:'#FFE9C2',200:'#FFD38A',300:'#FFB64D',400:'#FF9A1A',500:'#F08C00',600:'#C87400',700:'#9F5D00',800:'#764600',900:'#4E3000'},
+            maroon: {50:'#F8ECEE',100:'#F0D0D6',200:'#E1A5AE',300:'#D17987',400:'#C14E5F',500:'#A62E43',600:'#872537',700:'#681C2B',800:'#49131F',900:'#2C0A13'},
+            cream:  {50:'#FFFFFF',100:'#FCFAF6',200:'#F7F1E6',300:'#EFE3CE',400:'#E2CEAE',500:'#D6BA90',600:'#BCA27B',700:'#9F8968',800:'#816F55',900:'#685A46'},
+            teal:   {50:'#E7F8F6',100:'#C2F0EA',200:'#92E5DC',300:'#61D9CD',400:'#2FCCBA',500:'#12B7A6',600:'#0F9487',700:'#0C746B',800:'#09554E',900:'#063A35'}
           },
           fontFamily: {
-            display: ['Marhey', 'system-ui', 'sans-serif'],
-            sans: ['Inter', 'system-ui', 'sans-serif']
+            display: ['Marhey','system-ui','sans-serif'],
+            sans: ['Inter','system-ui','sans-serif']
           },
           boxShadow: {
-            aura: '0 0 40px rgba(240, 140, 0, 0.25)'
+            pro: '0 10px 30px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.06)'
           },
-          borderRadius: {
-            xl: '1rem'
-          }
+          borderRadius: { xl: '1rem', '2xl': '1.25rem' }
         }
-      },
-      darkMode: 'class'
+      }
     }
   </script>
   <style>
-    :root{ --bg: #FCFAF6; --text:#1f2937; }
-    .glow{ box-shadow: 0 0 0 2px rgba(248, 196, 113, 0.2), 0 10px 30px rgba(240, 140, 0, 0.25); }
+    .pro-container { max-width: 1200px; }
   </style>
 </head>
-<body class="bg-[var(--bg)] text-[var(--text)] antialiased">
+<body class="bg-cream-100 text-gray-800 antialiased">
+  <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-cream-300">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex h-16 items-center justify-between">
+    <nav class="pro-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3">
-          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-saffron-500 text-white font-bold glow">ॐ</span>
-          <span class="font-display text-xl font-semibold">ACJ Animation</span>
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-saffron-500 text-white font-bold">ॐ</span>
+          <span class="font-display text-xl font-semibold">ACJ Animation Divine</span>
         </a>
         <div class="hidden md:flex items-center gap-6">
-          <a href="#bhajans" class="hover:text-saffron-600">Bhajans</a>
-          <a href="#stories" class="hover:text-saffron-600">Stories</a>
-          <a href="#events" class="hover:text-saffron-600">Events</a>
-          <a href="#contact" class="hover:text-saffron-600">Contact</a>
-          <a href="https://youtube.com" class="inline-flex items-center px-4 py-2 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600">Subscribe</a>
+          <a class="hover:text-saffron-600" href="#videos">Videos</a>
+          <a class="hover:text-saffron-600" href="#stories">Stories</a>
+          <a class="hover:text-saffron-600" href="#about">About</a>
+          <a class="inline-flex items-center px-4 py-2 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600" href="https://www.youtube.com/@">Subscribe</a>
         </div>
-        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 hover:bg-cream-200" aria-label="Open menu">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-      <div id="mobileMenu" class="hidden md:hidden pb-4">
-        <a href="#bhajans" class="block py-2">Bhajans</a>
-        <a href="#stories" class="block py-2">Stories</a>
-        <a href="#events" class="block py-2">Events</a>
-        <a href="#contact" class="block py-2">Contact</a>
-        <a href="https://youtube.com" class="block py-2 text-saffron-600">Subscribe</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- Hero with YouTube -->
+    <!-- Hero -->
     <section class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-cream-100 to-cream-200"></div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="absolute inset-0 bg-gradient-to-b from-cream-50 to-cream-200"></div>
+      <div class="relative pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 grid lg:grid-cols-12 gap-10 items-center">
         <div class="lg:col-span-6">
-          <h1 class="font-display text-4xl md:text-5xl font-bold leading-tight">भक्ति की नई लहर — ACJ Animation</h1>
-          <p class="mt-4 text-gray-700">नए भजन, कहानियाँ और एनीमेशन के साथ दिव्य अनुभव करें। नीचे दिए वीडियो से शुरुआत करें।</p>
+          <h1 class="font-display text-4xl md:text-5xl font-bold leading-tight">भक्ति की प्रो प्रस्तुति — शक्तिशाली स्तोत्र और आत्मिक भजन</h1>
+          <p class="mt-4 text-gray-700">सुंदर, तेज़ और मोबाइल‑फर्स्ट वेबसाइट अनुभव के साथ पाँच चयनित वीडियो और उनसे प्रेरित दिव्य कहानियाँ.</p>
           <div class="mt-6 flex gap-3">
-            <a href="#bhajans" class="inline-flex items-center px-5 py-3 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600">Latest Bhajans</a>
+            <a href="#videos" class="inline-flex items-center px-5 py-3 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600">Watch Videos</a>
             <a href="#stories" class="inline-flex items-center px-5 py-3 rounded-lg border border-cream-400 hover:bg-cream-200">Read Stories</a>
           </div>
         </div>
         <div class="lg:col-span-6">
-          <div class="aspect-video rounded-xl overflow-hidden glow bg-black">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Latest Bhajan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="aspect-video rounded-2xl overflow-hidden shadow-pro bg-black">
+            <!-- Feature the first video -->
+            <iframe class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/MqAsUPFbr8Y?rel=0&modestbranding=1"
+              title="आकाशे च पृथिव्याम् | Powerful Shiva Stotra | ACJ Animation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
           </div>
-          <p class="mt-2 text-sm text-gray-600">Tip: Replace the embed with the latest bhajan link.</p>
+          <p class="mt-2 text-sm text-gray-600">नियमित रूप से नवीनतम भजन को यहाँ फीचर करें ताकि दर्शक तुरंत सुन सकें.</p>
         </div>
       </div>
     </section>
 
-    <!-- Bhajans Grid -->
-    <section id="bhajans" aria-labelledby="bhajans-title" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Videos Grid -->
+    <section id="videos" class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="flex items-end justify-between mb-6">
-        <h2 id="bhajans-title" class="font-display text-3xl font-semibold">Featured Bhajans</h2>
-        <a href="#" class="text-teal-700 hover:underline">View all</a>
+        <h2 class="font-display text-3xl font-semibold">Featured Videos</h2>
+        <a href="https://www.youtube.com/@" class="text-teal-700 hover:underline">View Channel</a>
       </div>
+
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card -->
-        <article class="rounded-xl border border-cream-300 bg-white overflow-hidden hover:shadow-lg transition">
-          <a href="#" aria-label="Teri maya ka - New Version">
-            <img src="https://placehold.co/600x340?text=Bhajan+Thumbnail" alt="Teri maya ka thumbnail" class="w-full h-48 object-cover">
-          </a>
+        <!-- 1 -->
+        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
+          <div class="aspect-video bg-black">
+            <iframe class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/MqAsUPFbr8Y?rel=0&modestbranding=1"
+              title="आकाशे च पृथिव्याम् | Powerful Shiva Stotra | ACJ Animation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
           <div class="p-4">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-saffron-100 text-saffron-700">Krishna</span>
-              <span class="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-teal-100 text-teal-700">Hindi</span>
-            </div>
-            <h3 class="text-lg font-semibold"><a href="#" class="hover:text-saffron-600">Teri Maya Ka (New Version)</a></h3>
-            <p class="mt-1 text-sm text-gray-600">Janmashtami Special — soulful vocals with serene visuals.</p>
-            <div class="mt-3 flex items-center justify-between text-sm text-gray-500">
-              <span>4:32</span>
-              <a href="#" class="text-saffron-600 hover:underline">Play</a>
+            <h3 class="text-lg font-semibold">आकाशे च पृथिव्याम् — शक्तिशाली शिव स्तोत्र</h3>
+            <p class="mt-1 text-sm text-gray-600">सर्वत्र स्थित शिवतत्त्व का अनुभव कराती धैर्य‑दायक वाणी और दिव्य एनीमेशन.</p>
+            <div class="mt-3 flex items-center gap-2 text-xs">
+              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Shiva</span>
+              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Sanskrit</span>
+              <span class="text-gray-500">2:17</span>
             </div>
           </div>
         </article>
 
-        <!-- Duplicate card pattern -->
-        <article class="rounded-xl border border-cream-300 bg-white overflow-hidden hover:shadow-lg transition">
-          <a href="#"><img src="https://placehold.co/600x340?text=Bhajan" alt="Bhajan thumbnail" class="w-full h-48 object-cover"></a>
+        <!-- 2 -->
+        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
+          <div class="aspect-video bg-black">
+            <iframe class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/lE-2WyDGcS8?rel=0&modestbranding=1"
+              title="Teri Ye Maya | Full Song New Version | ACJ Animation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
           <div class="p-4">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-saffron-100 text-saffron-700">Ram</span>
-              <span class="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-teal-100 text-teal-700">Hindi</span>
-            </div>
-            <h3 class="text-lg font-semibold"><a href="#" class="hover:text-saffron-600">Shri Ram Stuti</a></h3>
-            <p class="mt-1 text-sm text-gray-600">Calming chant with glowing aura visuals.</p>
-            <div class="mt-3 flex items-center justify-between text-sm text-gray-500">
-              <span>3:58</span>
-              <a href="#" class="text-saffron-600 hover:underline">Play</a>
+            <h3 class="text-lg font-semibold">तेरी ये माया — New Version</h3>
+            <p class="mt-1 text-sm text-gray-600">माया की चुनौती, भक्ति की शरण और अंततः करुणा का साक्षात्कार — आत्मा को छू लेने वाला सफ़र.</p>
+            <div class="mt-3 flex items-center gap-2 text-xs">
+              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Bhakti</span>
+              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
+              <span class="text-gray-500">1:24</span>
             </div>
           </div>
         </article>
 
-        <article class="rounded-xl border border-cream-300 bg-white overflow-hidden hover:shadow-lg transition">
-          <a href="#"><img src="https://placehold.co/600x340?text=Bhajan" alt="Bhajan thumbnail" class="w-full h-48 object-cover"></a>
+        <!-- 3 -->
+        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
+          <div class="aspect-video bg-black">
+            <iframe class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/V83r17G9zNg?rel=0&modestbranding=1"
+              title="Ram Teri Rahon Mein | Shri Ram Bhajan | ACJ Animation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
           <div class="p-4">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-saffron-100 text-saffron-700">Krishna</span>
-              <span class="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-teal-100 text-teal-700">Hindi</span>
+            <h3 class="text-lg font-semibold">राम तेरी राहों में — Shri Ram Bhajan</h3>
+            <p class="mt-1 text-sm text-gray-600">मर्यादा पुरुषोत्तम की छाया में चलने का संकल्प, हर श्वास में राम‑नाम की अनुभूति.</p>
+            <div class="mt-3 flex items-center gap-2 text-xs">
+              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Ram</span>
+              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
+              <span class="text-gray-500">3:07</span>
             </div>
-            <h3 class="text-lg font-semibold"><a href="#" class="hover:text-saffron-600">Govind Bolo Hari Gopal Bolo</a></h3>
-            <p class="mt-1 text-sm text-gray-600">Classic kirtan with modern arrangement.</p>
-            <div class="mt-3 flex items-center justify-between text-sm text-gray-500">
-              <span>5:11</span>
-              <a href="#" class="text-saffron-600 hover:underline">Play</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
+          <div class="aspect-video bg-black">
+            <iframe class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/BnvH9oqqf70?rel=0&modestbranding=1"
+              title="Syam Sunder Full Song | ACJ Animation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">श्याम सुंदर — कृष्ण बांसुरी</h3>
+            <p class="mt-1 text-sm text-gray-600">राधा‑कृष्ण के प्रेम, बाँसुरी और रसिक भावों का मधुर, मन को रँग देने वाला गान.</p>
+            <div class="mt-3 flex items-center gap-2 text-xs">
+              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Krishna</span>
+              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
+              <span class="text-gray-500">3:59</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="rounded-2xl bg-white border border-cream-300 overflow-hidden shadow-pro">
+          <div class="aspect-video bg-black">
+            <iframe class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/MyzebeAnqU0?rel=0&modestbranding=1"
+              title="Hari Anant | Devotional Song | ACJ Animation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">हरि अनंत — श्री विष्णु स्तुति</h3>
+            <p class="mt-1 text-sm text-gray-600">अनंत हरि‑महिमा का गान — ध्यान, कीर्तन और अन्तर्मन की शांति के लिए उपयुक्त.</p>
+            <div class="mt-3 flex items-center gap-2 text-xs">
+              <span class="px-2 py-0.5 rounded-full bg-saffron-100 text-saffron-700">Vishnu</span>
+              <span class="px-2 py-0.5 rounded-full bg-teal-100 text-teal-700">Hindi</span>
+              <span class="text-gray-500">2:02</span>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Stories -->
-    <section id="stories" aria-labelledby="stories-title" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-end justify-between mb-6">
-        <h2 id="stories-title" class="font-display text-3xl font-semibold">Latest Stories</h2>
-        <a href="#" class="text-teal-700 hover:underline">All stories</a>
-      </div>
+    <!-- Devotional Stories -->
+    <section id="stories" class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h2 class="font-display text-3xl font-semibold mb-6">भक्ति कथाएँ (गीतों से प्रेरित)</h2>
       <div class="space-y-6">
-        <article class="grid md:grid-cols-4 gap-4 p-4 rounded-xl border border-cream-300 bg-white hover:shadow">
-          <img src="https://placehold.co/480x300?text=Story" alt="Story thumbnail" class="w-full h-40 object-cover rounded-lg md:col-span-1">
-          <div class="md:col-span-3">
-            <h3 class="text-xl font-semibold"><a href="#" class="hover:text-saffron-600">Vrindavan ki Subah</a></h3>
-            <p class="mt-1 text-gray-700 line-clamp-2">A short Hindi devotional tale capturing the serenity of dawn in Vrindavan.</p>
-            <div class="mt-2 text-sm text-gray-500">5 min read • Hindi</div>
-          </div>
+        <!-- Story 1 -->
+        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
+          <h3 class="text-xl font-semibold">आकाश और पृथ्वी के पार — शिव तत्त्व का आलोक</h3>
+          <p class="mt-2 text-gray-700">एक साधक शून्य रात के आकाश तले बैठा था। जप के बीच उसे लगा मानो चारों दिशाओं में वही चेतना धड़क रही है — वायु की हल्की सिहरन से लेकर दूर कहीं जलती दीपशिखा तक, सबमें शिव का ही स्पंदन है। उस क्षण मस्तिष्क शांत और हृदय निडर हो उठा; आकाशे च पृथिव्याम् का अर्थ अनुभूति बन गया।</p>
         </article>
-        <!-- Add more story items similarly -->
+        <!-- Story 2 -->
+        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
+          <h3 class="text-xl font-semibold">माया की भूलभुलैया और एक दीपक</h3>
+          <p class="mt-2 text-gray-700">एक युवक रोज़ संघर्ष में उलझा रहता था — क्रोध, आसक्ति, तुलना। एक वृद्ध साधु ने कहा, “अंधियारे में भी एक दीपक चालू करो।” युवक ने नाम‑स्मरण अपनाया; धीरे‑धीरे माया की दीवारें पारदर्शी होने लगीं। पता चला कि राह कठिन थी, पर प्रकाश भीतर से उठ रहा था।</p>
+        </article>
+        <!-- Story 3 -->
+        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
+          <h3 class="text-xl font-semibold">अयोध्या की गलियों में</h3>
+          <p class="mt-2 text-gray-700">रामनवमी की पूर्व संध्या, एक यात्री गुमसुम गलियों में भटक रहा था। मंदिर से आती आरती की ध्वनि ने उसे रोका। उसने प्रणाम करके कहा, “प्रभु, अब राह तुम्हारी है।” उसी रात उसे सपने में एक तीर दिखाई दिया जो लक्ष्यभेदी था — दिशा मिल गई, यात्रा सार्थक हो उठी।</p>
+        </article>
+        <!-- Story 4 -->
+        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
+          <h3 class="text-xl font-semibold">यमुना तट की सरगम</h3>
+          <p class="mt-2 text-gray-700">यमुना के किनारे सांझ ढली। बाँसुरी की स्वर‑लहरियाँ जैसे मन को रंगकर ले गईं। राधा‑कृष्ण का खेल, चाँदनी की फुहार, और हृदय में उठती बालसुलभ हँसी — यही था श्याम सुंदर का वरद‑हास, जो हर उदासी को प्रेम के रंग में रंग देता है।</p>
+        </article>
+        <!-- Story 5 -->
+        <article class="p-6 rounded-2xl bg-white border border-cream-300 shadow-pro">
+          <h3 class="text-xl font-semibold">हरि अनंत, कथा अनंता</h3>
+          <p class="mt-2 text-gray-700">एक वृद्ध वैष्णव हर सुबह तुलसी के पास बैठकर जप करता। उसने कहा, “कथा ख़त्म नहीं होती, क्योंकि करुणा की धारा अनंत है।” उसी क्षण शिष्य ने समझा कि भक्ति कोई घटना नहीं, प्रवाह है — जैसे जल, जो हर प्यास में नया स्वाद देता है।</p>
+        </article>
       </div>
     </section>
 
-    <!-- Events -->
-    <section id="events" aria-labelledby="events-title" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h2 id="events-title" class="font-display text-3xl font-semibold mb-6">Upcoming Events</h2>
-      <ul class="grid sm:grid-cols-2 gap-6">
-        <li class="p-4 rounded-xl border border-cream-300 bg-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="text-lg font-semibold">Krishna Janmashtami Live</h3>
-              <p class="text-gray-600">Online premiere and kirtan session.</p>
-            </div>
-            <time class="text-sm text-gray-500">Aug 26, 7:00 PM</time>
-          </div>
-        </li>
-        <li class="p-4 rounded-xl border border-cream-300 bg-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="text-lg font-semibold">Ram Katha Saptah</h3>
-              <p class="text-gray-600">Seven-day narration with music.</p>
-            </div>
-            <time class="text-sm text-gray-500">Sep 10, 6:30 PM</time>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Newsletter -->
-    <section aria-labelledby="newsletter-title" class="bg-cream-100">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <h2 id="newsletter-title" class="font-display text-3xl font-semibold">Newsletter</h2>
-        <p class="mt-2 text-gray-700">नए भजन और कहानियाँ सीधे इनबॉक्स में पाएं।</p>
-        <form class="mt-6 sm:flex sm:justify-center gap-3">
-          <label for="email" class="sr-only">Email</label>
-          <input id="email" name="email" type="email" required placeholder="Email address" class="w-full sm:w-2/3 px-4 py-3 rounded-lg border border-cream-400 focus:outline-none focus:ring-2 focus:ring-teal-500" />
-          <button type="submit" class="mt-3 sm:mt-0 inline-flex items-center px-5 py-3 rounded-lg bg-teal-600 text-white hover:bg-teal-700">Subscribe</button>
-        </form>
+    <!-- About / CTA -->
+    <section id="about" class="bg-cream-200">
+      <div class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+        <h2 class="font-display text-3xl font-semibold">About ACJ Animation Divine</h2>
+        <p class="mt-2 text-gray-700">एनिमेशन, संगीत और शास्त्रीय भावों के संगम से निर्मित आध्यात्मिक अनुभव. हर सप्ताह नई प्रस्तुति, नए भाव.</p>
+        <a href="mailto:contactmusicseries@gmail.com" class="mt-6 inline-flex items-center px-5 py-3 rounded-lg bg-teal-600 text-white hover:bg-teal-700">Collaborate / Contact</a>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="border-t border-cream-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  <footer class="border-t border-cream-300">
+    <div class="pro-container mx-auto px-4 sm:px-6 lg:px-8 py-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <div>
-        <h3 class="font-semibold">ACJ Animation</h3>
-        <p class="mt-2 text-sm text-gray-600">Devotional music, stories, and animations.</p>
+        <h3 class="font-semibold">ACJ Animation Divine</h3>
+        <p class="mt-2 text-sm text-gray-600">Devotional music, animations, and soulful stories.</p>
       </div>
       <div>
-        <h3 class="font-semibold">Links</h3>
+        <h3 class="font-semibold">Quick Links</h3>
         <ul class="mt-2 space-y-2 text-sm">
-          <li><a href="#bhajans" class="hover:underline">Bhajans</a></li>
+          <li><a href="#videos" class="hover:underline">Videos</a></li>
           <li><a href="#stories" class="hover:underline">Stories</a></li>
-          <li><a href="#events" class="hover:underline">Events</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
         </ul>
       </div>
       <div>
         <h3 class="font-semibold">Social</h3>
         <ul class="mt-2 space-y-2 text-sm">
-          <li><a href="https://youtube.com" class="hover:underline">YouTube</a></li>
-          <li><a href="#" class="hover:underline">Instagram</a></li>
-          <li><a href="#" class="hover:underline">X/Twitter</a></li>
+          <li><a class="hover:underline" href="https://youtube.com/">YouTube</a></li>
+          <li><a class="hover:underline" href="#">Instagram</a></li>
+          <li><a class="hover:underline" href="#">Twitter/X</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="font-semibold">Contact</h3>
-        <p class="mt-2 text-sm">contactmusicseries@gmail.com</p>
+        <h3 class="font-semibold">Newsletter</h3>
+        <form class="mt-2 flex gap-2">
+          <input type="email" required placeholder="Email address"
+                 class="w-full px-4 py-2 rounded-lg border border-cream-400 focus:outline-none focus:ring-2 focus:ring-teal-500" />
+          <button class="px-4 py-2 rounded-lg bg-saffron-500 text-white hover:bg-saffron-600" type="submit">Join</button>
+        </form>
       </div>
     </div>
     <div class="text-center text-xs text-gray-500 pb-6">© <span id="year"></span> ACJ Animation • All rights reserved</div>
@@ -308,9 +343,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
   </script>
 </body>
 </html>
