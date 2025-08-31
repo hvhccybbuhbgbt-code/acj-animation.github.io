@@ -1,198 +1,113 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="utf-8">
-  <title>Bhajans – ACJ Animation</title>
-  <meta name="description" content="Krishna bhajans and devotional animations by ACJ Animation. Listen to Teri Maya ka Na Paaya koi Paar (New Version) – Janmashtami Special.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="https://hvhccybbuhbgbt-code.github.io/acj-animation.github.io/bhajans.html">
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111}
-    header,footer{padding:16px 20px;background:#0b1220;color:#fff}
-    nav a{color:#fff;margin-right:16px;text-decoration:none}
-    nav a:hover{text-decoration:underline}
-    .wrap{max-width:980px;margin:auto;padding:20px}
-    .card{border:1px solid #e6e8f0;border-radius:10px;padding:16px;background:#fff;margin:14px 0}
-    .btn{display:inline-block;background:#2b59ff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
-    .btn:hover{opacity:.9}
-    .muted{color:#555}
-    .vid{position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;margin:10px 0;background:#000}
-    .vid>iframe{position:absolute;inset:0;width:100%;height:100%}
-  </style>
-</head>
-<body>
-<header class="wrap" style="padding:16px 20px;background:#0b1220;color:#fff">
-  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-    <div><strong>ACJ Animation</strong></div>
-    <nav>
-      <a href="./">Home</a>
-      <a href="./bhajans.html" aria-current="page">Bhajans</a>
-      <a href="./about.html">About</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+<!DOCTYPE html> <html lang="hi"> <head> <meta charset="utf-8"> <title>Bhajans – ACJ Animation</title> <meta name="description" content="Krishna, Ram, Shiva bhajans and devotional animations by ACJ Animation."> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="https://hvhccybbuhbgbt-code.github.io/acj-animation.github.io/bhajans.html"> <style> :root{ --bg:#0b0f16; --card:#111827; --text:#e8eaed; --muted:#a9bbcf; --accent:#fbbf24; } *{ box-sizing:border-box } html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale } body{ margin:0; background:#fff; color:#111; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.6 } header,footer{ padding:16px 20px; background:#0b1220; color:#fff } nav a{ color:#fff; margin-right:16px; text-decoration:none } nav a:hover{text-decoration:underline} .wrap{ max-width:980px; margin:auto; padding:20px } h1{ font-size:clamp(22px,6vw,36px); line-height:1.25 } h2{ font-size:clamp(20px,5.5vw,28px) } h3{ font-size:clamp(18px,4.8vw,22px) }
+  /* Cards + grid */
+.grid{ display:grid; grid-template-columns:repeat(12,1fr); gap:1rem }
+.card{ grid-column:span 12; border:1px solid #e6e8f0; border-radius:10px; background:#fff; overflow:hidden }
+@media(min-width:900px){ .card{ grid-column:span 6 } }
+.content{ padding:.9rem }
+.meta{ color:#555; font-size:.92rem }
 
-<main class="wrap">
-  <h1>Bhajans</h1>
+/* Single video block (classic iframe) */
+.vid{ position:relative; padding-top:56.25%; border-radius:10px; overflow:hidden; background:#000; margin:10px 0 }
+.vid>iframe{ position:absolute; inset:0; width:100%; height:100% }
 
-  <article class="card" id="om-namo-bhagavate-vasudevaya">
-    <h2>Om Namo Bhagavate Vasudevaya (Hindi) song | Mahavatar Narsimha song New version | ACJ Animation</h2>
-    <p class="muted">Devotional • Lord Vishnu • Mantra • Hindi</p>
-    <div class="vid">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/fJB1gBaJ2kE?rel=0&modestbranding=1"
-        title="Om Namo Bhagavate Vasudevaya (Hindi) | ACJ Animation"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-        <div class="grid">
-    <!-- 1: Shiva Stotra -->
-    <article class="card" id="shiva-stotra">
-      <div class="card-header">
-        <span class="tag">Shiva Stotra</span>
-        <div class="yt-lite" data-videoid="MqAsUPFbr8Y" data-title="आकाशे च पृथिव्याम् — Powerful Shiva Stotra" aria-label="Play video: आकाशे च पृथिव्याम्">
-          <button class="yt-play" type="button" aria-label="Play video">Play</button>
-          <img src="https://i.ytimg.com/vi/MqAsUPFbr8Y/hqdefault.jpg" alt="Thumbnail: आकाशे च पृथिव्याम् — Powerful Shiva Stotra">
-        </div>
-      </div>
-      <div class="content">
-        <h3>आकाशे च पृथिव्याम् — Powerful Shiva Stotra</h3>
-        <p class="meta">Sanskrit -  Shiva -  Meditation</p>
-      </div>
-    </article>
+/* 2‑click YouTube placeholders (optional cards below) */
+.yt-lite{ position:relative; width:100%; aspect-ratio:16/9; background:#000; overflow:hidden; border:0 }
+.yt-lite img{ width:100%; height:100%; object-fit:cover; display:block }
+.yt-play{ position:absolute; inset:auto auto 12px 12px; background:var(--accent); color:#111; border:0; border-radius:999px; padding:10px 14px; font:inherit; cursor:pointer }
 
-    <!-- 2: Shri Ram -->
-    <article class="card" id="ram-teri-rahon-mein">
-      <div class="card-header">
-        <span class="tag">Shri Ram</span>
-        <div class="yt-lite" data-videoid="V83r17G9zNg" data-title="Ram Teri Rahon Mein — Shri Ram Bhajan" aria-label="Play video: Ram Teri Rahon Mein">
-          <button class="yt-play" type="button" aria-label="Play video">Play</button>
-          <img src="https://i.ytimg.com/vi/V83r17G9zNg/hqdefault.jpg" alt="Thumbnail: Ram Teri Rahon Mein — Shri Ram Bhajan">
-        </div>
-      </div>
-      <div class="content">
-        <h3>Ram Teri Rahon Mein — Shri Ram Bhajan</h3>
-        <p class="meta">Devotion -  Peace</p>
-      </div>
-    </article>
-
-    <!-- 3: Krishna -->
-    <article class="card" id="shyam-sundar-2">
-      <div class="card-header">
-        <span class="tag">Krishna</span>
-        <div class="yt-lite" data-videoid="fA0u5RtSgJg" data-title="Shyam Sundar 2.0 — Krishna Bhajan" aria-label="Play video: Shyam Sundar 2.0">
-          <button class="yt-play" type="button" aria-label="Play video">Play</button>
-          <img src="https://i.ytimg.com/vi/fA0u5RtSgJg/hqdefault.jpg" alt="Thumbnail: Shyam Sundar 2.0 — Krishna Bhajan">
-        </div>
-      </div>
-      <div class="content">
-        <h3>Shyam Sundar 2.0 — Krishna Bhajan</h3>
-        <p class="meta">Radha‑Krishna -  Rasa</p>
-      </div>
-    </article>
-
-    <!-- 4: Shri Ram -->
-    <article class="card" id="ye-maya-teri-ram">
-      <div class="card-header">
-        <span class="tag">Shri Ram</span>
-        <div class="yt-lite" data-videoid="aVs71R7z3JI" data-title="ये माया तेरी राम — Devotional Music Video" aria-label="Play video: ये माया तेरी राम">
-          <button class="yt-play" type="button" aria-label="Play video">Play</button>
-          <img src="https://i.ytimg.com/vi/aVs71R7z3JI/hqdefault.jpg" alt="Thumbnail: ये माया तेरी राम — Devotional Music Video">
-        </div>
-      </div>
-      <div class="content">
-        <h3>ये माया तेरी राम</h3>
-        <p class="meta">Maya -  Naam -  Clarity</p>
-      </div>
-    </article>
-
-    <!-- 5: Vishnu -->
-    <article class="card" id="om-namo-narayanam">
-      <div class="card-header">
-        <span class="tag">Vishnu</span>
-        <div class="yt-lite" data-videoid="H4S5AkanLQU" data-title="Om Namo Narayanam — Vishal Mishra" aria-label="Play video: Om Namo Narayanam">
-          <button class="yt-play" type="button" aria-label="Play video">Play</button>
-          <img src="https://i.ytimg.com/vi/H4S5AkanLQU/hqdefault.jpg" alt="Thumbnail: Om Namo Narayanam — Vishal Mishra">
-        </div>
-      </div>
-      <div class="content">
-        <h3>Om Namo Narayanam — Vishal Mishra</h3>
-        <p class="meta">Vishnu -  Narayan -  Peace</p>
-      </div>
-    </article>
-
-    <!-- 6: Krishna -->
-    <article class="card" id="jo-prem-gali">
-      <div class="card-header">
-        <span class="tag">Krishna</span>
-        <div class="yt-lite" data-videoid="kGuVqBcEYgc" data-title="Jo Prem Gali Mein Aaye Nahin" aria-label="Play video: Jo Prem Gali Mein Aaye Nahin">
-          <button class="yt-play" type="button" aria-label="Play video">Play</button>
-          <img src="https://i.ytimg.com/vi/kGuVqBcEYgc/hqdefault.jpg" alt="Thumbnail: Jo Prem Gali Mein Aaye Nahin">
-        </div>
-      </div>
-      <div class="content">
-        <h3>Jo Prem Gali Mein Aaye Nahin</h3>
-        <p class="meta">Prem -  Bhakti -  Krishna</p>
-      </div>
-    </article>
-  </div>
-    </section>
-    
-    </div>
+/* Typography wrapping safeguards */
+.wrap, .content, p, h1, h2, h3{ overflow-wrap:break-word; word-break:normal; hyphens:auto; white-space:normal } /* MDN best practices */
+.btn{display:inline-block;background:#2b59ff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+.btn:hover{opacity:.9}
+  </style> </head> <body> <header> <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap"> <div><strong>ACJ Animation</strong></div> <nav> <a href="./">Home</a> <a href="./bhajans.html" aria-current="page">Bhajans</a> <a href="./about.html">About</a> <a href="./contact.html">Contact</a> </nav> </div> </header> <main class="wrap"> <h1>Bhajans</h1> <!-- 01: Om Namo Bhagavate (classic iframe section) --> <article class="card" id="om-namo-bhagavate-vasudevaya"> <div class="content"> <h2>Om Namo Bhagavate Vasudevaya (Hindi) — New Version</h2> <p class="muted">Devotional - Lord Vishnu - Mantra - Hindi</p> <div class="vid"> <iframe src="https://www.youtube-nocookie.com/embed/fJB1gBaJ2kE?rel=0&modestbranding=1" title="Om Namo Bhagavate Vasudevaya (Hindi) | ACJ Animation" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
     <h3>About this Bhajan</h3>
-    <p>यह हृदय‑स्पर्शी भक्ति गीत “ॐ नमो भगवते वासुदेवाय” भगवान विष्णु को समर्पित है—cinematic संगीत, divine chants और शुद्ध भक्ति का संगम। ACJ Animation की प्रस्तुति।</p>
-    <h3>Highlights</h3>
-    <ul>
-      <li>Theme: Mahavatar Narsimha, Narayan, Vasudev</li>
-      <li>Format: Cinematic devotional mantra (Hindi)</li>
-      <li>Use: Festival playlists, meditation, satsang</li>
-    </ul>
-    <p><a class="btn" href="https://youtu.be/fJB1gBaJ2kE" target="_blank" rel="noopener">Watch on YouTube</a></p>
-    <h3>Credits</h3>
-    <p class="muted">ACJ Animation — contactmusicseries@gmail.com</p>
-  </article>
+  <p>यह हृदय‑स्पर्शी भक्ति गीत “ॐ नमो भगवते वासुदेवाय” भगवान विष्णु को समर्पित है—cinematic संगीत, divine chants और शुद्ध भक्ति का संगम।</p>
 
-  <article id="teri-maya" class="card">
-    <h2>Teri Maya ka Na Paaya koi Paar (New Version) | Krishna Janmashtami Special | ACJ Animation</h2>
-    <p class="muted">Release: Aug 2025 • Genre: Devotional • Tags: Krishna, Janmashtami, Animation</p>
-    <div class="vid">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/3qAAI-545rQ?rel=0&modestbranding=1"
-        title="Teri Maya ka Na Paaya koi Paar (New Version) | ACJ Animation"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
-
-    <h3>About this Bhajan</h3>
-    <p>यह कृष्ण जन्माष्टमी स्पेशल भजन ACJ Animation द्वारा प्रस्तुत है जिसमें भगवान श्रीकृष्ण की दिव्य लीलाओं, बाँसुरी की मधुरता और भक्ति की भावना को एनीमेशन के माध्यम से दर्शाया गया है। यह गीत प्रेम, शांति और आनंद का संदेश देता है—“तेरी माया का ना पाया कोई पार…”.</p>
-
-    <h3>Highlights</h3>
-    <ul>
-      <li>Theme: Krishna Janmashtami, Krishna Leela</li>
-      <li>Format: Animated devotional song</li>
-      <li>Suitable for: Festival playlists, temple gatherings, family celebrations</li>
-    </ul>
-
-    <h3>Listen/Watch</h3>
-    <p><a class="btn" href="https://youtu.be/3qAAI-545rQ" target="_blank" rel="noopener">Open on YouTube</a></p>
-
-    <h3>Sample Lyrics</h3>
-    <blockquote style="border-left:4px solid #e6e8f0;padding-left:12px">तेरी माया का ना पाया कोई पार…</blockquote>
-
-    <h3>Credits</h3>
-    <p class="muted">ACJ Animation • Music & Visuals • contactmusicseries@gmail.com</p>
-  </article>
-</main>
-
-<footer style="padding:16px 20px;background:#0b1220;color:#fff">
-  <div class="wrap">
-    <small>© <span id="year"></span> ACJ Animation • Devotional Music & Animation</small>
+  <h3>Highlights</h3>
+  <ul>
+    <li>Theme: Mahavatar Narsimha, Narayan, Vasudev</li>
+    <li>Format: Cinematic devotional mantra (Hindi)</li>
+    <li>Use: Festival playlists, meditation, satsang</li>
+  </ul>
+  <p><a class="btn" href="https://youtu.be/fJB1gBaJ2kE" target="_blank" rel="noopener">Watch on YouTube</a></p>
+  <h3>Credits</h3>
+  <p class="muted">ACJ Animation — contactmusicseries@gmail.com</p>
   </div>
-</footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+  </article> <!-- 02: Teri Maya (classic iframe section) --> <article id="teri-maya" class="card"> <div class="content"> <h2>Teri Maya ka Na Paaya koi Paar (New Version) — Janmashtami Special</h2> <p class="muted">Release: Aug 2025 - Genre: Devotional - Tags: Krishna, Janmashtami, Animation</p> <div class="vid"> <iframe src="https://www.youtube-nocookie.com/embed/3qAAI-545rQ?rel=0&modestbranding=1" title="Teri Maya ka Na Paaya koi Paar (New Version) | ACJ Animation" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+    <h3>About this Bhajan</h3>
+  <p>यह कृष्ण जन्माष्टमी स्पेशल भजन ACJ Animation द्वारा प्रस्तुत है जिसमें श्रीकृष्ण की दिव्य लीलाएँ और मधुर धुन एनीमेशन के साथ दर्शायी गई हैं।</p>
+
+  <h3>Highlights</h3>
+  <ul>
+    <li>Theme: Krishna Janmashtami, Krishna Leela</li>
+    <li>Format: Animated devotional song</li>
+    <li>Suitable: Festival playlists, temple gatherings</li>
+  </ul>
+
+  <p><a class="btn" href="https://youtu.be/3qAAI-545rQ" target="_blank" rel="noopener">Open on YouTube</a></p>
+  <h3>Sample Lyrics</h3>
+  <blockquote style="border-left:4px solid #e6e8f0;padding-left:12px">तेरी माया का ना पाया कोई पार…</blockquote>
+  <h3>Credits</h3>
+  <p class="muted">ACJ Animation -  contactmusicseries@gmail.com</p>
+  </div>
+  </article> <!-- 03: Cards grid (2‑click placeholders) --> <section class="grid" aria-label="More Bhajans"> <!-- Shiva Stotra --> <article class="card" id="shiva-stotra"> <div class="content"> <h3>आकाशे च पृथिव्याम् — Powerful Shiva Stotra</h3> <p class="meta">Sanskrit - Shiva - Meditation</p> <div class="yt-lite" data-videoid="MqAsUPFbr8Y" data-title="आकाशे च पृथिव्याम् — Powerful Shiva Stotra" aria-label="Play video: आकाशे च पृथिव्याम्"> <button class="yt-play" type="button" aria-label="Play video">Play</button> <img src="https://i.ytimg.com/vi/MqAsUPFbr8Y/hqdefault.jpg" alt="Thumbnail: आकाशे च पृथिव्याम् — Powerful Shiva Stotra"> </div> </div> </article>
+  <!-- Ram Teri Rahon Mein -->
+<article class="card" id="ram-teri-rahon-mein">
+  <div class="content">
+    <h3>Ram Teri Rahon Mein — Shri Ram Bhajan</h3>
+    <p class="meta">Devotion -  Peace</p>
+    <div class="yt-lite" data-videoid="V83r17G9zNg" data-title="Ram Teri Rahon Mein — Shri Ram Bhajan" aria-label="Play video: Ram Teri Rahon Mein">
+      <button class="yt-play" type="button" aria-label="Play video">Play</button>
+      <img src="https://i.ytimg.com/vi/V83r17G9zNg/hqdefault.jpg" alt="Thumbnail: Ram Teri Rahon Mein — Shri Ram Bhajan">
+    </div>
+  </div>
+</article>
+
+<!-- Shyam Sundar 2.0 -->
+<article class="card" id="shyam-sundar-2">
+  <div class="content">
+    <h3>Shyam Sundar 2.0 — Krishna Bhajan</h3>
+    <p class="meta">Radha‑Krishna -  Rasa</p>
+    <div class="yt-lite" data-videoid="fA0u5RtSgJg" data-title="Shyam Sundar 2.0 — Krishna Bhajan" aria-label="Play video: Shyam Sundar 2.0">
+      <button class="yt-play" type="button" aria-label="Play video">Play</button>
+      <img src="https://i.ytimg.com/vi/fA0u5RtSgJg/hqdefault.jpg" alt="Thumbnail: Shyam Sundar 2.0 — Krishna Bhajan">
+    </div>
+  </div>
+</article>
+
+<!-- Ye Maya Teri Ram -->
+<article class="card" id="ye-maya-teri-ram">
+  <div class="content">
+    <h3>ये माया तेरी राम</h3>
+    <p class="meta">Maya -  Naam -  Clarity</p>
+    <div class="yt-lite" data-videoid="aVs71R7z3JI" data-title="ये माया तेरी राम — Devotional Music Video" aria-label="Play video: ये माया तेरी राम">
+      <button class="yt-play" type="button" aria-label="Play video">Play</button>
+      <img src="https://i.ytimg.com/vi/aVs71R7z3JI/hqdefault.jpg" alt="Thumbnail: ये माया तेरी राम — Devotional Music Video">
+    </div>
+  </div>
+</article>
+
+<!-- Om Namo Narayanam -->
+<article class="card" id="om-namo-narayanam">
+  <div class="content">
+    <h3>Om Namo Narayanam — Vishal Mishra</h3>
+    <p class="meta">Vishnu -  Narayan -  Peace</p>
+    <div class="yt-lite" data-videoid="H4S5AkanLQU" data-title="Om Namo Narayanam — Vishal Mishra" aria-label="Play video: Om Namo Narayanam">
+      <button class="yt-play" type="button" aria-label="Play video">Play</button>
+      <img src="https://i.ytimg.com/vi/H4S5AkanLQU/hqdefault.jpg" alt="Thumbnail: Om Namo Narayanam — Vishal Mishra">
+    </div>
+  </div>
+</article>
+
+<!-- Jo Prem Gali -->
+<article class="card" id="jo-prem-gali">
+  <div class="content">
+    <h3>Jo Prem Gali Mein Aaye Nahin</h3>
+    <p class="meta">Prem -  Bhakti -  Krishna</p>
+    <div class="yt-lite" data-videoid="kGuVqBcEYgc" data-title="Jo Prem Gali Mein Aaye Nahin" aria-label="Play video: Jo Prem Gali Mein Aaye Nahin">
+      <button class="yt-play" type="button" aria-label="Play video">Play</button>
+      <img src="https://i.ytimg.com/vi/kGuVqBcEYgc/hqdefault.jpg" alt="Thumbnail: Jo Prem Gali Mein Aaye Nahin">
+    </div>
+  </div>
+</article>
+</section> </main> <footer> <div class="wrap"> <small>© <span id="year"></span> ACJ Animation - Devotional Music & Animation</small> </div> </footer> <script> document.getElementById('year').textContent = new Date().getFullYear(); // 2‑click YouTube: replace placeholder with iframe on explicit click document.addEventListener('click', function(e){ const btn = e.target.closest('.yt-play'); if(!btn) return; const wrap = btn.closest('.yt-lite'); const vid = wrap.dataset.videoid; const title = wrap.dataset.title || 'YouTube video'; wrap.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+vid+'?rel=0&modestbranding=1&autoplay=1" title="'+title+'" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'; }, {passive:true}); </script> </body> </html>
